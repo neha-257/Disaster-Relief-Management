@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Inventory and Supply Management - Disaster Relief Management</title>
+  <meta name="description" content="Inventory and Supply Management for Disaster Relief">
+  <meta name="keywords" content="disaster, relief, inventory, supplies, management">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Disaster Relief</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="victim-management.html">Victim Management</a></li>
+          <li><a href="missing-persons.html">Missing Persons</a></li>
+          <li><a href="relief-camps.html">Relief Camps</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="inventory.html" class="active">Inventory</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Inventory & Supply Management</h1>
+        <p>Track, manage, and distribute relief supplies efficiently</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Inventory</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Inventory Section -->
+    <section id="inventory" class="section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Inventory and Supply Management</h2>
+        <p>Track supplies, monitor stock levels, and manage distribution</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Inventory Dashboard -->
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clipboard-data"></i>
+              </div>
+              <h3>Inventory Dashboard</h3>
+              <p>Overview of current inventory levels across all relief camps.</p>
+              
+              <div class="row mt-4">
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-basket3-fill fs-1 text-success"></i>
+                      </div>
+                      <h5 class="card-title">Food Supplies</h5>
+                      <div class="h2 fw-bold">2,580 kg</div>
+                      <div class="progress mt-3">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-droplet-half fs-1 text-primary"></i>
+                      </div>
+                      <h5 class="card-title">Water</h5>
+                      <div class="h2 fw-bold">4,250 L</div>
+                      <div class="progress mt-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">45%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-bandaid fs-1 text-danger"></i>
+                      </div>
+                      <h5 class="card-title">Medical Supplies</h5>
+                      <div class="h2 fw-bold">950 units</div>
+                      <div class="progress mt-3">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-3 mb-4">
+                  <div class="card">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-house-fill fs-1 text-warning"></i>
+                      </div>
+                      <h5 class="card-title">Shelter Items</h5>
+                      <div class="h2 fw-bold">1,200 units</div>
+                      <div class="progress mt-3">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inventory List -->
+          <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-boxes"></i>
+              </div>
+              <h3>Current Inventory</h3>
+              <p>Detailed view of all inventory items across camps.</p>
+              
+              <!-- Inventory Filter Controls -->
+              <div class="row mb-4">
+                <div class="col-md-6">
+                  <select class="form-control" id="camp-filter">
+                    <option value="">All Camps</option>
+                    <option value="1">Delhi Flood Relief Camp</option>
+                    <option value="2">Mumbai Cyclone Shelter</option>
+                    <option value="3">Kolkata Flood Relief</option>
+                    <option value="4">Chennai Tsunami Shelter</option>
+                    <option value="5">Assam Flood Relief</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search items...">
+                    <button class="btn btn-primary" type="button">Search</button>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Inventory Table -->
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Item ID</th>
+                      <th>Item Name</th>
+                      <th>Camp</th>
+                      <th>Quantity</th>
+                      <th>Date Received</th>
+                      <th>Status</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="inventory-table-body">
+                    <!-- Inventory items will be loaded here dynamically -->
+                  </tbody>
+                </table>
+              </div>
+              
+              <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">View All Items</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Inventory Management -->
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-plus-circle"></i>
+              </div>
+              <h3>Inventory Management</h3>
+              <p>Add new items or update existing inventory records.</p>
+              
+              <!-- Add New Item Form (initially hidden) -->
+              <div id="add-item-form-container" style="display: none;" class="mt-4">
+                <h4 class="mb-3">Add New Inventory Item</h4>
+                <form id="add-item-form">
+                  <div class="row gy-3">
+                    <div class="col-md-12">
+                      <input type="text" name="item_name" class="form-control" placeholder="Item Name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <input type="number" name="quantity" class="form-control" placeholder="Quantity" required>
+                    </div>
+                    <div class="col-md-6">
+                      <select name="camp_id" class="form-control" id="item-camp">
+                        <option value="">Select Relief Camp</option>
+                      </select>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="date" name="date_received" class="form-control" placeholder="Date Received" required>
+                    </div>
+                    <div class="col-12 text-center">
+                      <button type="submit" class="btn btn-success">Add Item</button>
+                      <button type="button" class="btn btn-secondary" id="cancel-add-item">Cancel</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              
+              <!-- Admin Buttons -->
+              <div class="text-center mt-4" id="admin-buttons">
+                <button id="show-add-item-form" class="btn btn-primary me-2"><i class="bi bi-plus-circle"></i> Add New Item</button>
+                <button id="refresh-inventory" class="btn btn-secondary"><i class="bi bi-arrow-clockwise"></i> Refresh List</button>
+              </div>
+              
+              <!-- Additional Script -->
+              <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                  // Set up add item form toggle
+                  const addItemBtn = document.getElementById('show-add-item-form');
+                  if (addItemBtn) {
+                    addItemBtn.addEventListener('click', function() {
+                      document.getElementById('add-item-form-container').style.display = 'block';
+                      document.getElementById('admin-buttons').style.display = 'none';
+                    });
+                  }
+                  
+                  const cancelAddBtn = document.getElementById('cancel-add-item');
+                  if (cancelAddBtn) {
+                    cancelAddBtn.addEventListener('click', function() {
+                      document.getElementById('add-item-form-container').style.display = 'none';
+                      document.getElementById('admin-buttons').style.display = 'block';
+                      document.getElementById('add-item-form').reset();
+                    });
+                  }
+                  
+                  // Set up refresh button
+                  const refreshBtn = document.getElementById('refresh-inventory');
+                  if (refreshBtn) {
+                    refreshBtn.addEventListener('click', function() {
+                      loadInventoryItems();
+                    });
+                  }
+                });
+              </script>
+            </div>
+          </div>
+
+          <!-- Supply Tracking -->
+          <div class="col-lg-12 mt-4" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h3>Supply Movement History</h3>
+              <p>Track the movement of supplies between camps and to beneficiaries.</p>
+              
+              <div class="table-responsive mt-4">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Supply ID</th>
+                      <th>Item</th>
+                      <th>From Camp</th>
+                      <th>To Camp</th>
+                      <th>Quantity</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>401</td>
+                      <td>Rice Bags</td>
+                      <td>Central Warehouse</td>
+                      <td>Delhi Flood Relief Camp</td>
+                      <td>200</td>
+                      <td>2024-02-02</td>
+                      <td><span class="badge bg-success">Delivered</span></td>
+                    </tr>
+                    <tr>
+                      <td>402</td>
+                      <td>Medicines</td>
+                      <td>Central Warehouse</td>
+                      <td>Mumbai Cyclone Shelter</td>
+                      <td>150</td>
+                      <td>2024-02-03</td>
+                      <td><span class="badge bg-success">Delivered</span></td>
+                    </tr>
+                    <tr>
+                      <td>403</td>
+                      <td>Water Bottles</td>
+                      <td>Central Warehouse</td>
+                      <td>Kolkata Flood Relief</td>
+                      <td>500</td>
+                      <td>2024-02-04</td>
+                      <td><span class="badge bg-success">Delivered</span></td>
+                    </tr>
+                    <tr>
+                      <td>404</td>
+                      <td>Blankets</td>
+                      <td>Mumbai Cyclone Shelter</td>
+                      <td>Delhi Flood Relief Camp</td>
+                      <td>250</td>
+                      <td>2024-02-05</td>
+                      <td><span class="badge bg-warning">In Transit</span></td>
+                    </tr>
+                    <tr>
+                      <td>405</td>
+                      <td>Dry Food Packets</td>
+                      <td>Central Warehouse</td>
+                      <td>Chennai Tsunami Shelter</td>
+                      <td>400</td>
+                      <td>2024-02-06</td>
+                      <td><span class="badge bg-primary">Scheduled</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Inventory Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Disaster Relief Management</h3>
+      <p>Providing efficient disaster relief operations and management of resources.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Disaster Relief Management</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  
+  <!-- Page Specific JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load all inventory items
+      loadInventoryItems();
+      
+      // Load relief camps for dropdown
+      loadReliefCamps();
+      
+      // Set up add new item form
+      const addItemForm = document.getElementById('add-item-form');
+      if (addItemForm) {
+        addItemForm.addEventListener('submit', handleAddItemFormSubmit);
+      }
+      
+      // Set up camp filter select
+      const campFilter = document.getElementById('camp-filter');
+      if (campFilter) {
+        campFilter.addEventListener('change', function() {
+          filterInventoryByRelief(this.value);
+        });
+      }
+      
+      // Set up search input
+      const searchInput = document.querySelector('input[placeholder="Search items..."]');
+      const searchButton = searchInput.nextElementSibling;
+      searchButton.addEventListener('click', function() {
+        filterInventoryByName(searchInput.value);
+      });
+    });
+    
+    // Load all inventory items
+    async function loadInventoryItems() {
+      try {
+        const response = await inventoryAPI.getAll();
+        const tableBody = document.getElementById('inventory-table-body');
+        
+        // Clear existing rows
+        tableBody.innerHTML = '';
+        
+        if (response.success && response.data) {
+          response.data.forEach(item => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${item.item_id}</td>
+              <td>${item.item_name}</td>
+              <td>${item.camp_name || 'Not Assigned'}</td>
+              <td>${item.quantity}</td>
+              <td>${item.date_received}</td>
+              <td>${getStatusBadge(item.quantity)}</td>
+              <td>
+                <button class="btn btn-sm btn-primary edit-item" data-id="${item.item_id}">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-danger delete-item" data-id="${item.item_id}">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            `;
+            tableBody.appendChild(row);
+          });
+          
+          // Add event listeners to buttons
+          document.querySelectorAll('.edit-item').forEach(button => {
+            button.addEventListener('click', function() {
+              const itemId = this.getAttribute('data-id');
+              // Implement edit functionality
+              console.log('Edit item with ID:', itemId);
+            });
+          });
+          
+          document.querySelectorAll('.delete-item').forEach(button => {
+            button.addEventListener('click', async function() {
+              const itemId = this.getAttribute('data-id');
+              if (confirm('Are you sure you want to delete this inventory item?')) {
+                try {
+                  const result = await inventoryAPI.delete(itemId);
+                  if (result.success) {
+                    showAlert('Inventory item deleted successfully');
+                    loadInventoryItems(); // Reload the table
+                  }
+                } catch (error) {
+                  showAlert('Failed to delete inventory item: ' + error.message, 'danger');
+                }
+              }
+            });
+          });
+          
+          // Update dashboard counts
+          updateDashboardCounts(response.data);
+        }
+      } catch (error) {
+        showAlert('Failed to load inventory items: ' + error.message, 'danger');
+      }
+    }
+    
+    // Load relief camps for dropdown
+    async function loadReliefCamps() {
+      try {
+        const response = await reliefCampAPI.getAll();
+        const campSelect = document.getElementById('camp-filter');
+        const assignCampSelect = document.getElementById('item-camp');
+        
+        // Function to populate a select element
+        const populateCampSelect = (select) => {
+          if (!select) return;
+          
+          // Clear existing options except the first one
+          while (select.options.length > 1) {
+            select.remove(1);
+          }
+          
+          // Add camps to dropdown
+          if (response.success && response.data) {
+            response.data.forEach(camp => {
+              const option = document.createElement('option');
+              option.value = camp.camp_id;
+              option.textContent = camp.camp_name;
+              select.appendChild(option);
+            });
+          }
+        };
+        
+        // Populate both select elements
+        populateCampSelect(campSelect);
+        populateCampSelect(assignCampSelect);
+        
+      } catch (error) {
+        showAlert('Failed to load relief camps: ' + error.message, 'danger');
+      }
+    }
+    
+    // Update dashboard counts
+    function updateDashboardCounts(items) {
+      if (!items || !items.length) return;
+      
+      // Group items by category (simplified)
+      let foodItems = items.filter(item => item.item_name.toLowerCase().includes('food') || item.item_name.toLowerCase().includes('meal'));
+      let waterItems = items.filter(item => item.item_name.toLowerCase().includes('water') || item.item_name.toLowerCase().includes('drink'));
+      let medicalItems = items.filter(item => item.item_name.toLowerCase().includes('medic') || item.item_name.toLowerCase().includes('medicine'));
+      let shelterItems = items.filter(item => item.item_name.toLowerCase().includes('blanket') || item.item_name.toLowerCase().includes('tent'));
+      
+      // Calculate totals
+      const totalFood = foodItems.reduce((sum, item) => sum + (parseInt(item.quantity) || 0), 0);
+      const totalWater = waterItems.reduce((sum, item) => sum + (parseInt(item.quantity) || 0), 0);
+      const totalMedical = medicalItems.reduce((sum, item) => sum + (parseInt(item.quantity) || 0), 0);
+      const totalShelter = shelterItems.reduce((sum, item) => sum + (parseInt(item.quantity) || 0), 0);
+      
+      // Update dashboard cards
+      const dashboard = document.querySelector('.inventory-dashboard');
+      if (dashboard) {
+        // Food card
+        const foodCard = dashboard.querySelector('.card:nth-child(1) .h2');
+        if (foodCard) foodCard.textContent = `${totalFood} kg`;
+        
+        // Water card
+        const waterCard = dashboard.querySelector('.card:nth-child(2) .h2');
+        if (waterCard) waterCard.textContent = `${totalWater} L`;
+        
+        // Medical card
+        const medicalCard = dashboard.querySelector('.card:nth-child(3) .h2');
+        if (medicalCard) medicalCard.textContent = `${totalMedical} units`;
+        
+        // Shelter card
+        const shelterCard = dashboard.querySelector('.card:nth-child(4) .h2');
+        if (shelterCard) shelterCard.textContent = `${totalShelter} units`;
+      }
+    }
+    
+    // Handle add item form submission
+    async function handleAddItemFormSubmit(e) {
+      e.preventDefault();
+      
+      try {
+        const formData = formToJSON(this);
+        const response = await inventoryAPI.create(formData);
+        
+        if (response.success) {
+          showAlert('Inventory item added successfully');
+          this.reset();
+          loadInventoryItems(); // Reload the table
+          
+          // Hide form
+          document.getElementById('add-item-form-container').style.display = 'none';
+          document.getElementById('admin-buttons').style.display = 'block';
+        }
+      } catch (error) {
+        showAlert('Failed to add inventory item: ' + error.message, 'danger');
+      }
+    }
+    
+    // Filter inventory by relief camp
+    function filterInventoryByRelief(campId) {
+      const tableRows = document.querySelectorAll('#inventory-table-body tr');
+      
+      tableRows.forEach(row => {
+        const campCell = row.cells[2].textContent;
+        
+        if (!campId || (campId && campCell.includes(campId))) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+    
+    // Filter inventory by item name
+    function filterInventoryByName(searchTerm) {
+      const tableRows = document.querySelectorAll('#inventory-table-body tr');
+      searchTerm = searchTerm.toLowerCase();
+      
+      tableRows.forEach(row => {
+        const itemName = row.cells[1].textContent.toLowerCase();
+        
+        if (itemName.includes(searchTerm)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+    
+    // Get status badge based on quantity
+    function getStatusBadge(quantity) {
+      quantity = parseInt(quantity) || 0;
+      
+      if (quantity <= 0) {
+        return '<span class="badge bg-danger">Out of Stock</span>';
+      } else if (quantity < 20) {
+        return '<span class="badge bg-warning">Low Stock</span>';
+      } else {
+        return '<span class="badge bg-success">In Stock</span>';
+      }
+    }
+  </script>
+
+</body>
+
+</html> 

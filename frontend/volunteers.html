@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Volunteers - Disaster Relief Management</title>
+  <meta name="description" content="Volunteer Management for Disaster Relief">
+  <meta name="keywords" content="disaster, relief, volunteers, help">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Disaster Relief</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="victim-management.html">Victim Management</a></li>
+          <li><a href="missing-persons.html">Missing Persons</a></li>
+          <li><a href="relief-camps.html">Relief Camps</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="volunteers.html" class="active">Volunteers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Volunteer Management</h1>
+        <p>Register, manage, and coordinate volunteer activities</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Volunteers</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Volunteers Section -->
+    <section id="volunteers" class="section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Volunteer Management</h2>
+        <p>Join our volunteer team and contribute to disaster relief efforts</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Volunteer Registration -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-person-plus"></i>
+              </div>
+              <h3>Become a Volunteer</h3>
+              <p>Register to join our volunteer team and help with disaster relief operations.</p>
+              
+              <form id="volunteer-form" class="mt-4">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" name="contact_number" class="form-control" placeholder="Contact Number" required>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="skills" class="form-control" rows="3" placeholder="Skills/Experience (Medical, Logistics, Food Distribution, etc.)"></textarea>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="availability" class="form-control" required>
+                      <option value="">Availability</option>
+                      <option value="weekdays">Weekdays</option>
+                      <option value="weekends">Weekends</option>
+                      <option value="both">Both</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="preferred_location" class="form-control" id="camp-select">
+                      <option value="">Preferred Location</option>
+                      <!-- Camps will be loaded dynamically -->
+                    </select>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit">Register as Volunteer</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Volunteer Opportunities -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-clipboard-check"></i>
+              </div>
+              <h3>Current Volunteer Needs</h3>
+              <p>Find out where volunteers are most needed right now.</p>
+              
+              <div class="card mb-4 mt-4">
+                <div class="card-body">
+                  <h5 class="card-title">Medical Volunteers Needed</h5>
+                  <p class="card-text">We urgently need doctors, nurses, and medical assistants at multiple relief camps.</p>
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Delhi Flood Relief Camp
+                      <span class="badge bg-danger rounded-pill">Urgent</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Chennai Tsunami Shelter
+                      <span class="badge bg-warning rounded-pill">High Need</span>
+                    </li>
+                  </ul>
+                  <a href="#volunteer-form" class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+              
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">Food Distribution Volunteers</h5>
+                  <p class="card-text">Help prepare and distribute food to disaster victims at our relief camps.</p>
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Mumbai Cyclone Shelter
+                      <span class="badge bg-warning rounded-pill">High Need</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Kolkata Flood Relief
+                      <span class="badge bg-info rounded-pill">Moderate Need</span>
+                    </li>
+                  </ul>
+                  <a href="#volunteer-form" class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+              
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Logistics & Transport Volunteers</h5>
+                  <p class="card-text">Help with logistics, transportation, and supply management.</p>
+                  <ul class="list-group list-group-flush mb-3">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Assam Flood Relief
+                      <span class="badge bg-danger rounded-pill">Urgent</span>
+                    </li>
+                  </ul>
+                  <a href="#volunteer-form" class="btn btn-primary">Apply Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Volunteer List -->
+          <div class="col-lg-12 mt-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3>Registered Volunteers</h3>
+              <p>List of volunteers who have registered to help with relief operations.</p>
+              
+              <div class="table-responsive mt-4">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Contact</th>
+                      <th>Skills</th>
+                      <th>Availability</th>
+                      <th>Location</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="volunteers-table-body">
+                    <!-- Volunteer records will be loaded here dynamically -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="text-center mt-4">
+                <button id="load-more-volunteers" class="btn btn-primary">View All Volunteers</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Volunteers Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Disaster Relief Management</h3>
+      <p>Providing efficient disaster relief operations and management of resources.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Disaster Relief Management</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  
+  <!-- Page Specific JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load relief camps for dropdown
+      loadReliefCamps();
+      
+      // Load volunteers for table
+      loadVolunteers();
+      
+      // Setup form submission
+      const volunteerForm = document.getElementById('volunteer-form');
+      volunteerForm.addEventListener('submit', handleVolunteerFormSubmit);
+      
+      // Setup view all button
+      const loadMoreBtn = document.getElementById('load-more-volunteers');
+      loadMoreBtn.addEventListener('click', function() {
+        loadVolunteers(true); // Load all volunteers
+      });
+      
+      // Setup apply now buttons
+      document.querySelectorAll('.card .btn-primary').forEach(button => {
+        button.addEventListener('click', function(e) {
+          // Get the volunteer category from the card title
+          const cardTitle = this.closest('.card').querySelector('.card-title').textContent;
+          const skillsTextarea = document.querySelector('textarea[name="skills"]');
+          
+          // Pre-fill the skills field with the volunteer category
+          skillsTextarea.value = cardTitle;
+          
+          // Scroll to the form
+          document.querySelector('#volunteer-form').scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    });
+    
+    // Load relief camps for dropdown
+    async function loadReliefCamps() {
+      try {
+        const response = await reliefCampAPI.getAll();
+        const campSelect = document.getElementById('camp-select');
+        
+        // Clear any existing options except the first one
+        while (campSelect.options.length > 1) {
+          campSelect.remove(1);
+        }
+        
+        // Add camps to dropdown
+        if (response.success && response.data) {
+          response.data.forEach(camp => {
+            const option = document.createElement('option');
+            option.value = camp.camp_id;
+            option.textContent = camp.camp_name;
+            campSelect.appendChild(option);
+          });
+        }
+      } catch (error) {
+        showAlert('Failed to load relief camps: ' + error.message, 'danger');
+      }
+    }
+    
+    // Load volunteers for table
+    async function loadVolunteers(showAll = false) {
+      try {
+        const response = await volunteerAPI.getAll();
+        const tableBody = document.getElementById('volunteers-table-body');
+        
+        // Clear existing rows
+        tableBody.innerHTML = '';
+        
+        if (response.success && response.data) {
+          // Limit to 5 if not showing all
+          const volunteersToShow = showAll ? response.data : response.data.slice(0, 5);
+          
+          volunteersToShow.forEach(volunteer => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${volunteer.volunteer_id}</td>
+              <td>${volunteer.first_name} ${volunteer.last_name}</td>
+              <td>${volunteer.contact_number || volunteer.email}</td>
+              <td>${volunteer.skills || 'Not specified'}</td>
+              <td>${volunteer.availability}</td>
+              <td>${volunteer.camp_name || 'Not Assigned'}</td>
+              <td>
+                <button class="btn btn-sm btn-primary edit-volunteer" data-id="${volunteer.volunteer_id}">
+                  <i class="bi bi-pencil"></i>
+                </button>
+                <button class="btn btn-sm btn-danger delete-volunteer" data-id="${volunteer.volunteer_id}">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            `;
+            tableBody.appendChild(row);
+          });
+          
+          // Add event listeners to buttons
+          document.querySelectorAll('.edit-volunteer').forEach(button => {
+            button.addEventListener('click', function() {
+              const volunteerId = this.getAttribute('data-id');
+              // Implement edit functionality
+              console.log('Edit volunteer with ID:', volunteerId);
+            });
+          });
+          
+          document.querySelectorAll('.delete-volunteer').forEach(button => {
+            button.addEventListener('click', async function() {
+              const volunteerId = this.getAttribute('data-id');
+              if (confirm('Are you sure you want to delete this volunteer?')) {
+                try {
+                  const result = await volunteerAPI.delete(volunteerId);
+                  if (result.success) {
+                    showAlert('Volunteer deleted successfully');
+                    loadVolunteers(showAll); // Reload the table
+                  }
+                } catch (error) {
+                  showAlert('Failed to delete volunteer: ' + error.message, 'danger');
+                }
+              }
+            });
+          });
+        }
+      } catch (error) {
+        showAlert('Failed to load volunteers: ' + error.message, 'danger');
+      }
+    }
+    
+    // Handle volunteer form submission
+    async function handleVolunteerFormSubmit(e) {
+      e.preventDefault();
+      
+      try {
+        const formData = formToJSON(this);
+        const response = await volunteerAPI.create(formData);
+        
+        if (response.success) {
+          showAlert('Thank you for registering as a volunteer!');
+          this.reset();
+          loadVolunteers(); // Reload the table
+        }
+      } catch (error) {
+        showAlert('Failed to register volunteer: ' + error.message, 'danger');
+      }
+    }
+  </script>
+
+</body>
+
+</html> 

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Donations - Disaster Relief Management</title>
+  <meta name="description" content="Donations for Disaster Relief Management">
+  <meta name="keywords" content="disaster, relief, donations, contribute">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Disaster Relief</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="victim-management.html">Victim Management</a></li>
+          <li><a href="missing-persons.html">Missing Persons</a></li>
+          <li><a href="relief-camps.html">Relief Camps</a></li>
+          <li><a href="donations.html" class="active">Donations</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Donations</h1>
+        <p>Contribute to disaster relief operations through donations</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Donations</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Donations Section -->
+    <section id="donations" class="section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Donations</h2>
+        <p>Support disaster relief through financial or material donations</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <!-- Donation Cards -->
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-heart"></i>
+              </div>
+              <h3>Urgent Needs</h3>
+              <p>These are the most urgent supplies needed at our relief camps.</p>
+              
+              <div class="row mt-4" id="urgentNeeds">
+                <!-- Urgent needs will be loaded here dynamically -->
+                <div class="col-md-4 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-droplet-fill fs-1 text-primary"></i>
+                      </div>
+                      <h5 class="card-title">Clean Water</h5>
+                      <p class="card-text">Bottled water and water purification systems are urgently needed.</p>
+                      <div class="progress mb-3">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+                      </div>
+                      <a href="#donate-form" class="btn btn-primary">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-capsule fs-1 text-danger"></i>
+                      </div>
+                      <h5 class="card-title">Medicines</h5>
+                      <p class="card-text">First aid kits, antibiotics, and essential medical supplies.</p>
+                      <div class="progress mb-3">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">65%</div>
+                      </div>
+                      <a href="#donate-form" class="btn btn-primary">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                  <div class="card h-100">
+                    <div class="card-body text-center">
+                      <div class="mb-3">
+                        <i class="bi bi-basket2-fill fs-1 text-warning"></i>
+                      </div>
+                      <h5 class="card-title">Food Supplies</h5>
+                      <p class="card-text">Non-perishable food items, baby food, and ready-to-eat meals.</p>
+                      <div class="progress mb-3">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 48%;" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100">48%</div>
+                      </div>
+                      <a href="#donate-form" class="btn btn-primary">Donate Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Donation Form -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative" id="donate-form">
+              <div class="icon">
+                <i class="bi bi-gift"></i>
+              </div>
+              <h3>Make a Donation</h3>
+              <p>Donate supplies or funds to support relief operations.</p>
+              
+              <form id="donation-form" class="mt-4">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="donor_name" class="form-control" placeholder="Your Name/Organization" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" name="contact" class="form-control" placeholder="Contact Number" required>
+                  </div>
+                  <div class="col-md-6">
+                    <select name="donation_type" class="form-control" required id="donation-type">
+                      <option value="">Donation Type</option>
+                      <option value="supplies">Supplies/Items</option>
+                      <option value="money">Financial Support</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <select name="item_id" class="form-control" id="item-select">
+                      <option value="">Select Item (for supplies)</option>
+                      <!-- Items will be populated from the database -->
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="number" name="quantity" class="form-control" placeholder="Quantity">
+                  </div>
+                  <div class="col-md-6">
+                    <input type="date" name="date_donated" class="form-control" placeholder="Date of Donation" required>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="notes" class="form-control" rows="3" placeholder="Additional Notes"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit">Submit Donation</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Recent Donations -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-list-check"></i>
+              </div>
+              <h3>Recent Donations</h3>
+              <p>See the most recent contributions to our relief efforts.</p>
+              
+              <div class="table-responsive mt-4">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Donor</th>
+                      <th>Item</th>
+                      <th>Quantity</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody id="donations-table-body">
+                    <!-- Donation records will be loaded here dynamically -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="text-center mt-3">
+                <button id="load-more-donations" class="btn btn-primary">View More Donations</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Donations Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Disaster Relief Management</h3>
+      <p>Providing efficient disaster relief operations and management of resources.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Disaster Relief Management</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  
+  <!-- Page Specific JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load inventory items for the dropdown
+      loadInventoryItems();
+      
+      // Load recent donations
+      loadDonations();
+      
+      // Setup donation form submission
+      const donationForm = document.getElementById('donation-form');
+      donationForm.addEventListener('submit', handleDonationFormSubmit);
+      
+      // Setup donation type change event
+      const donationType = document.getElementById('donation-type');
+      donationType.addEventListener('change', function() {
+        const itemSelect = document.getElementById('item-select');
+        const quantityInput = document.querySelector('input[name="quantity"]');
+        
+        if (this.value === 'supplies') {
+          itemSelect.parentElement.style.display = 'block';
+          quantityInput.parentElement.style.display = 'block';
+        } else {
+          itemSelect.parentElement.style.display = 'none';
+          quantityInput.parentElement.style.display = 'none';
+        }
+      });
+      
+      // Setup load more button
+      const loadMoreBtn = document.getElementById('load-more-donations');
+      loadMoreBtn.addEventListener('click', function() {
+        loadDonations(true); // Load all donations
+      });
+    });
+    
+    // Load inventory items for dropdown
+    async function loadInventoryItems() {
+      try {
+        const response = await inventoryAPI.getAll();
+        const itemSelect = document.getElementById('item-select');
+        
+        // Clear any existing options except the first one
+        while (itemSelect.options.length > 1) {
+          itemSelect.remove(1);
+        }
+        
+        // Add items to dropdown
+        if (response.success && response.data) {
+          response.data.forEach(item => {
+            const option = document.createElement('option');
+            option.value = item.item_id;
+            option.textContent = item.item_name;
+            itemSelect.appendChild(option);
+          });
+        }
+      } catch (error) {
+        showAlert('Failed to load inventory items: ' + error.message, 'danger');
+      }
+    }
+    
+    // Load donations for table
+    async function loadDonations(showAll = false) {
+      try {
+        // Since there's no direct endpoint for donations, we'll use inventory for demo
+        const response = await inventoryAPI.getAll();
+        const tableBody = document.getElementById('donations-table-body');
+        
+        // Clear existing rows
+        tableBody.innerHTML = '';
+        
+        if (response.success && response.data) {
+          // Limit to 5 if not showing all
+          const donationsToShow = showAll ? response.data : response.data.slice(0, 5);
+          
+          donationsToShow.forEach(item => {
+            // Create sample donation data
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${300 + parseInt(item.item_id) - 201}</td>
+              <td>Anonymous Donor</td>
+              <td>${item.item_name}</td>
+              <td>${Math.floor(Math.random() * 100) + 10}</td>
+              <td>${item.date_received}</td>
+            `;
+            tableBody.appendChild(row);
+          });
+        }
+      } catch (error) {
+        showAlert('Failed to load donations: ' + error.message, 'danger');
+      }
+    }
+    
+    // Handle donation form submission
+    async function handleDonationFormSubmit(e) {
+      e.preventDefault();
+      
+      try {
+        const formData = formToJSON(this);
+        
+        // For supplies donations, create an inventory item
+        if (formData.donation_type === 'supplies' && formData.item_id) {
+          const itemData = {
+            item_name: document.getElementById('item-select').options[document.getElementById('item-select').selectedIndex].text,
+            quantity: formData.quantity,
+            date_received: formData.date_donated
+          };
+          
+          const response = await inventoryAPI.create(itemData);
+          
+          if (response.success) {
+            showAlert('Donation submitted successfully! Thank you for your contribution.');
+            this.reset();
+            loadDonations(); // Reload the table
+          }
+        } else {
+          // For money donations, just show success message
+          showAlert('Donation submitted successfully! Thank you for your contribution.');
+          this.reset();
+        }
+      } catch (error) {
+        showAlert('Failed to submit donation: ' + error.message, 'danger');
+      }
+    }
+  </script>
+
+</body>
+
+</html> 

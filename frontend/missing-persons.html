@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Missing Persons Reports - Disaster Relief Management</title>
+  <meta name="description" content="Missing Persons Reports for Disaster Relief Management">
+  <meta name="keywords" content="disaster, relief, missing, persons, reports">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Disaster Relief</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="victim-management.html">Victim Management</a></li>
+          <li><a href="missing-persons.html" class="active">Missing Persons</a></li>
+          <li><a href="relief-camps.html">Relief Camps</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container position-relative">
+        <h1>Missing Persons Reports</h1>
+        <p>Submit and search for missing persons during disaster situations</p>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Missing Persons</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Missing Persons Section -->
+    <section id="missing-persons" class="section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Missing Persons Reports</h2>
+        <p>Report and search for missing individuals during disaster relief operations</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-file-earmark-person"></i>
+              </div>
+              <h3>Submit Missing Person Report</h3>
+              <p>File a report for a missing family member or friend.</p>
+              <!-- Form for submitting missing person report -->
+              <form id="missing-person-form" class="mt-4">
+                <div class="row gy-4">
+                  <div class="col-md-6">
+                    <input type="text" name="reporter_name" class="form-control" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="text" name="missing_person_name" class="form-control" placeholder="Missing Person's Name" required>
+                  </div>
+                  <div class="col-md-12">
+                    <input type="text" name="last_seen_location" class="form-control" placeholder="Last Seen Location" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="date" name="date_reported" class="form-control" placeholder="Date Reported" required>
+                  </div>
+                  <div class="col-md-6">
+                    <input type="tel" name="contact" class="form-control" placeholder="Your Contact Number" required>
+                  </div>
+                  <div class="col-md-12">
+                    <select name="camp_id" class="form-control" id="camp-select">
+                      <option value="">Select Nearest Relief Camp</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <textarea name="description" class="form-control" rows="3" placeholder="Additional Information (Physical Description, Clothing, etc.)"></textarea>
+                  </div>
+                  <div class="col-md-12 text-center">
+                    <button type="submit">Submit Report</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h3>Search Missing Persons</h3>
+              <p>Search for information about missing persons.</p>
+              
+              <!-- Search Form -->
+              <form id="search-form" class="mb-4">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="search-input" placeholder="Search by name or location">
+                  <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+              </form>
+              
+              <!-- Missing Persons Reports Table -->
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Missing Person</th>
+                      <th>Last Seen</th>
+                      <th>Reported By</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="missing-persons-table">
+                    <!-- Missing persons reports will be loaded here dynamically -->
+                  </tbody>
+                </table>
+              </div>
+              <div class="text-center mt-4">
+                <a href="#" id="view-all-reports" class="btn btn-primary">View All Reports</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Missing Persons Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Disaster Relief Management</h3>
+      <p>Providing efficient disaster relief operations and management of resources.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename">Disaster Relief Management</strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  
+  <!-- Page Specific JS -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load relief camps for dropdown
+      loadReliefCamps();
+      
+      // Load missing persons for table
+      loadMissingPersons();
+      
+      // Setup form submission
+      const missingPersonForm = document.getElementById('missing-person-form');
+      missingPersonForm.addEventListener('submit', handleMissingPersonFormSubmit);
+      
+      // Setup search form
+      const searchForm = document.getElementById('search-form');
+      searchForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const searchTerm = document.getElementById('search-input').value.toLowerCase().trim();
+        filterMissingPersons(searchTerm);
+      });
+      
+      // Setup view all button
+      const viewAllBtn = document.getElementById('view-all-reports');
+      viewAllBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        loadMissingPersons(true); // Load all reports
+        document.getElementById('search-input').value = ''; // Clear search input
+      });
+    });
+    
+    // Load relief camps for dropdown
+    async function loadReliefCamps() {
+      try {
+        const response = await reliefCampAPI.getAll();
+        const campSelect = document.getElementById('camp-select');
+        
+        // Clear any existing options except the first one
+        while (campSelect.options.length > 1) {
+          campSelect.remove(1);
+        }
+        
+        // Add camps to dropdown
+        if (response.success && response.data) {
+          response.data.forEach(camp => {
+            const option = document.createElement('option');
+            option.value = camp.camp_id;
+            option.textContent = camp.camp_name;
+            campSelect.appendChild(option);
+          });
+        }
+      } catch (error) {
+        showAlert('Failed to load relief camps: ' + error.message, 'danger');
+      }
+    }
+    
+    // Load missing persons for table
+    async function loadMissingPersons(showAll = false) {
+      try {
+        const response = await missingPersonAPI.getAll();
+        const tableBody = document.getElementById('missing-persons-table');
+        
+        // Clear existing rows
+        tableBody.innerHTML = '';
+        
+        if (response.success && response.data) {
+          // Limit to 5 if not showing all
+          const reportsToShow = showAll ? response.data : response.data.slice(0, 5);
+          
+          reportsToShow.forEach(report => {
+            const row = document.createElement('tr');
+            row.innerHTML = `
+              <td>${report.report_id}</td>
+              <td>${report.missing_person_name}</td>
+              <td>${report.last_seen_location}</td>
+              <td>${report.reporter_name}</td>
+              <td>
+                <button class="btn btn-sm btn-info view-report" data-id="${report.report_id}">
+                  <i class="bi bi-info-circle"></i>
+                </button>
+                <button class="btn btn-sm btn-danger delete-report" data-id="${report.report_id}">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </td>
+            `;
+            tableBody.appendChild(row);
+          });
+          
+          // Add event listeners to buttons
+          document.querySelectorAll('.view-report').forEach(button => {
+            button.addEventListener('click', async function() {
+              const reportId = this.getAttribute('data-id');
+              try {
+                const response = await missingPersonAPI.getById(reportId);
+                if (response.success) {
+                  alert(`Missing Person Details:\nName: ${response.data.missing_person_name}\nLast Seen: ${response.data.last_seen_location}\nReported By: ${response.data.reporter_name}\nDate Reported: ${response.data.date_reported}\nContact: ${response.data.contact}`);
+                }
+              } catch (error) {
+                showAlert('Failed to load report details: ' + error.message, 'danger');
+              }
+            });
+          });
+          
+          document.querySelectorAll('.delete-report').forEach(button => {
+            button.addEventListener('click', async function() {
+              const reportId = this.getAttribute('data-id');
+              if (confirm('Are you sure you want to delete this missing person report?')) {
+                try {
+                  const result = await missingPersonAPI.delete(reportId);
+                  if (result.success) {
+                    showAlert('Report deleted successfully');
+                    loadMissingPersons(showAll); // Reload the table
+                  }
+                } catch (error) {
+                  showAlert('Failed to delete report: ' + error.message, 'danger');
+                }
+              }
+            });
+          });
+        }
+      } catch (error) {
+        showAlert('Failed to load missing person reports: ' + error.message, 'danger');
+      }
+    }
+    
+    // Filter missing persons based on search input
+    function filterMissingPersons(searchTerm) {
+      const tableRows = document.querySelectorAll('#missing-persons-table tr');
+      
+      tableRows.forEach(row => {
+        const missingPersonName = row.cells[1].textContent.toLowerCase();
+        const lastSeenLocation = row.cells[2].textContent.toLowerCase();
+        const reporterName = row.cells[3].textContent.toLowerCase();
+        
+        if (missingPersonName.includes(searchTerm) || 
+            lastSeenLocation.includes(searchTerm) || 
+            reporterName.includes(searchTerm)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+    
+    // Handle missing person form submission
+    async function handleMissingPersonFormSubmit(e) {
+      e.preventDefault();
+      
+      try {
+        const formData = formToJSON(this);
+        const response = await missingPersonAPI.create(formData);
+        
+        if (response.success) {
+          showAlert('Missing person report submitted successfully');
+          this.reset();
+          loadMissingPersons(); // Reload the table
+        }
+      } catch (error) {
+        showAlert('Failed to submit report: ' + error.message, 'danger');
+      }
+    }
+  </script>
+
+</body>
+
+</html> 

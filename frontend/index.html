@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Disaster Relief Management System</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1 class="sitename">Safe Horizon</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="victim-management.html">Victim Management</a></li>
+          <li><a href="missing-persons.html">Missing Persons</a></li>
+          <li><a href="relief-camps.html">Relief Camps</a></li>
+          <li><a href="donations.html">Donations</a></li>
+          <li><a href="inventory.html">Inventory</a></li>
+          <li><a href="volunteers.html">Volunteers</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <div id="hero-carousel" data-bs-interval="5000" class="container carousel carousel-fade" data-bs-ride="carousel">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Safe Horizon</span></h2>
+            <p class="animate__animated animate__fadeInUp">A comprehensive system for managing disaster relief operations, coordinating resources, and helping victims during emergency situations.</p>
+            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Efficient Relief Operations</h2>
+            <p class="animate__animated animate__fadeInUp">Our system helps manage victims, missing persons reports, relief camps, donations, inventory, and volunteer coordination in one integrated platform.</p>
+            <a href="#services" class="btn-get-started animate__animated animate__fadeInUp scrollto">Our Services</a>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <div class="carousel-container">
+            <h2 class="animate__animated animate__fadeInDown">Join Our Relief Efforts</h2>
+            <p class="animate__animated animate__fadeInUp">Contribute by donating supplies, volunteering your time, or helping spread awareness about ongoing disaster relief operations.</p>
+            <a href="donations.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Donate Now</a>
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+
+      <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
+        <defs>
+          <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="wave1">
+          <use xlink:href="#wave-path" x="50" y="3"></use>
+        </g>
+        <g class="wave2">
+          <use xlink:href="#wave-path" x="50" y="0"></use>
+        </g>
+        <g class="wave3">
+          <use xlink:href="#wave-path" x="50" y="9"></use>
+        </g>
+      </svg>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row position-relative">
+
+          <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="assets/img/about.jpg"></div>
+
+          <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
+            <h2 class="inner-title">About Disaster Relief Management</h2>
+            <div class="our-story">
+              <h4>Established 2025</h4>
+              <h3>Our Mission</h3>
+              <p>Safe Horizon is a Disaster Relief Management System that is designed to streamline and optimize disaster response operations, ensuring that resources are efficiently allocated and victims receive timely assistance.</p>
+              <ul>
+                <li><i class="bi bi-check-circle"></i> <span>Centralized management of all disaster relief operations</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Efficient tracking of victims, resources, and volunteers</span></li>
+                <li><i class="bi bi-check-circle"></i> <span>Quick response to emergency situations with minimal delays</span></li>
+              </ul>
+              <p>Our system helps disaster management teams coordinate relief efforts, track victims and missing persons, manage relief camps, handle donations, monitor inventory, and coordinate volunteers—all from a single integrated platform.</p>
+
+              <div class="watch-video d-flex align-items-center position-relative">
+                <i class="bi bi-play-circle"></i>
+                <a href="https://www.youtube.com/watch?v=hVGLlj-Qdy4" class="glightbox stretched-link">Watch Overview</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients section light-background">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Features 2 Section -->
+    <section id="features-2" class="features section features-2">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Features</h2>
+        <p>Safe Horizon is a web-based platform designed to streamline rescue, resource distribution, and volunteer coordination during emergencies.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-between">
+          <div class="features-image col-lg-4 d-flex align-items-center" data-aos="fade-up">
+            <img src="assets/img/features.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-7 d-flex flex-column justify-content-center">
+
+            <div class="features-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-archive flex-shrink-0"></i>
+              <div>
+                <h4>Volunteer Coordination</h4>
+                <p>Manage volunteer registrations and task assignments.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-basket flex-shrink-0"></i>
+              <div>
+                <h4>Victim & Missing Person Management </h4>
+                <p>Register and search disaster-affected and missing individuals.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-broadcast flex-shrink-0"></i>
+              <div>
+                <h4>Relief Camp & Inventory Management</h4>
+                <p>Track camps, supplies, and ensure efficient resource allocation.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+            <div class="features-item d-flex mt-5 " data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-camera-reels flex-shrink-0"></i>
+              <div>
+                <h4>Donation Tracking</h4>
+                <p>Record and utilize donations from individuals or organizations.</p>
+              </div>
+            </div><!-- End Features Item-->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features 2 Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Services</h2>
+        <p>Comprehensive disaster relief management tools to streamline emergency response operations</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-person-vcard"></i>
+              </div>
+              <a href="victim-management.html" class="stretched-link">
+                <h3>Victim Management</h3>
+              </a>
+              <p>Register and track victims, their personal details, medical conditions, and assigned relief camps.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <a href="missing-persons.html" class="stretched-link">
+                <h3>Missing Persons</h3>
+              </a>
+              <p>Report and search for missing individuals during disaster situations to reunite families.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-house-door"></i>
+              </div>
+              <a href="relief-camps.html" class="stretched-link">
+                <h3>Relief Camps</h3>
+              </a>
+              <p>Manage relief camp locations, capacities, facilities, and occupancy during emergencies.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-gift"></i>
+              </div>
+              <a href="donations.html" class="stretched-link">
+                <h3>Donations</h3>
+              </a>
+              <p>Coordinate financial and material donations from individuals and organizations.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-boxes"></i>
+              </div>
+              <a href="inventory.html" class="stretched-link">
+                <h3>Inventory Management</h3>
+              </a>
+              <p>Track relief supplies, monitor stock levels, and manage distribution to affected areas.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <a href="volunteers.html" class="stretched-link">
+                <h3>Volunteer Coordination</h3>
+              </a>
+              <p>Register volunteers, manage assignments, and track contributions to relief operations.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section dark-background">
+
+      <img src="assets/img/cta-bg.jpg" alt="">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Get Involved Today</h3>
+              <p>Your contribution can make a significant difference in disaster relief efforts. Volunteer your time, donate supplies, or support our operations financially to help those affected by disasters.</p>
+              <a class="cta-btn" href="volunteers.html">Become a Volunteer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Impact Statistics</h2>
+        <p>The difference our relief efforts have made in disaster-affected areas</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="zoom-in" data-aos-delay="100">
+
+        <div class="row g-4 text-center">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="pricing-item">
+              <div class="icon">
+                <i class="bi bi-person-check"></i>
+              </div>
+              <h4><span>15,000+</span></h4>
+              <h3>People Helped</h3>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="pricing-item">
+              <div class="icon">
+                <i class="bi bi-house-check"></i>
+              </div>
+              <h4><span>10</span></h4>
+              <h3>Relief Camps</h3>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="pricing-item">
+              <div class="icon">
+                <i class="bi bi-people"></i>
+              </div>
+              <h4><span>350+</span></h4>
+              <h3>Volunteers</h3>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="pricing-item">
+              <div class="icon">
+                <i class="bi bi-currency-exchange"></i>
+              </div>
+              <h4><span>₹12.8M</span></h4>
+              <h3>Donations Received</h3>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact Us</h2>
+        <p>Reach out to our disaster relief management team for assistance or information</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Headquarters</h3>
+                <p>123 Relief Center, New Delhi, India 110001</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Emergency Hotline</h3>
+                <p>+91 1800 100 200</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email</h3>
+                <p>contact@disasterrelief.org</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="#" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <h3 class="sitename">Safe Horizon</h3>
+      <p>Providing efficient disaster relief operations and management of resources.</p>
+      <div class="social-links d-flex justify-content-center">
+        <a href=""><i class="bi bi-twitter-x"></i></a>
+        <a href=""><i class="bi bi-facebook"></i></a>
+        <a href=""><i class="bi bi-instagram"></i></a>
+        <a href=""><i class="bi bi-skype"></i></a>
+        <a href=""><i class="bi bi-linkedin"></i></a>
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <span>Copyright</span> <strong class="px-1 sitename"> Safe Horizon </strong> <span>All Rights Reserved</span>
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
